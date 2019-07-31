@@ -1,7 +1,14 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
+import Home from './views/Home';
+import Proyects from './views/Proyects';
+import About from './views/About';
+import Skills from './views/Skills'
+import Contact from './views/Contact';
+
 
 function App() {
   return (
@@ -21,8 +28,17 @@ function App() {
         >
           Learn React
         </a>
-      
-    </div>
+
+      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/Home" component={Home} />
+          <Route exact path="/Proyects" component={Proyects} />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/Skills" component={Skills} />
+          <Route exact path="/Contact" component={Contact} />
+        </Switch>
+      </BrowserRouter>
     </>
   );
 }
