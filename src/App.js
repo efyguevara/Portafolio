@@ -20,7 +20,7 @@ function App() {
       </div>
       
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
           <Route exact path="/Home" component={Home} />
           <Route exact path="/Proyects" component={Proyects} />
           <Route exact path="/About" component={About} />
