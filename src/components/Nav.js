@@ -1,11 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Route } from "react-router-dom";
+import { Navbar } from 'react-bootstrap';
 
 
-function Navbar() {
+function Nav() {
     return (
-
-        <div>
+        <>
+       
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+              <Navbar.Brand href="/home"><span className="colorOne">STEFANY GUEVARA</span>S</Navbar.Brand>
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="mr-auto">
+                  <Nav.Link href="/Proyects">Proyects</Nav.Link>
+                  <Nav.Link href="/About">About</Nav.Link>
+                </Nav>
+                <Nav>
+                  <Nav.Link href="/Skills">Skills</Nav.Link>
+                  {/* <Nav.Link eventKey={2} >
+                    Dank memes
+                  </Nav.Link> */}
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
+          
+ 
+ 
+        {/* <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <Link to="/Home" className="navbar-brand"><span className="colorOne">STEFANY GUEVARA</span></Link>
 
@@ -22,10 +43,9 @@ function Navbar() {
                     </div>
                 </div>
             </nav>
-
-
-        </div>
+        </div> */}
+        </>
     );
 }
 
-export default Navbar;
+export default Nav;

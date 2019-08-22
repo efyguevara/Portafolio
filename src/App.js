@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar';
+import Nav from './components/Nav';
 import Home from './views/Home';
 import Proyects from './views/Proyects';
 import About from './views/About';
@@ -14,7 +14,7 @@ function App() {
     <>
     <BrowserRouter>
       <header >
-        <Navbar />
+        <Nav />
       </header>
       <div className="App">
       </div>
