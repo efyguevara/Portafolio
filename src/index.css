@@ -1,5 +1,5 @@
 body {
-  background: #545353;
+  background: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -13,15 +13,4 @@ code {
     monospace;
 }
 
-.colorOne {
-  color: #FF5252
-}
 
-/* .colorTwo {
-  color: #545353
-} */
-
-.bg-dark {
-  background: #424242
-  
-}

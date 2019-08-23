@@ -17,10 +17,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @keyframes App-logo-spin {
@@ -29,5 +27,84 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.colorOne {
+  color: #FF5252
+} 
+
+.bg-dark {
+  background: #424242
+  
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 320px) { 
+  .name{
+    font-size: 24px;
+    color: #FF5252;
+  }
+  .navLinks {
+    font-size: 16px;
+    color: White;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 321px) and (max-width: 767.99px) { 
+  .name{
+    font-size: 28px;
+    color: #FF5252;
+  }
+  .navLinks {
+    font-size: 18px;
+    color: White;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023.99px) { 
+  .name{
+    font-size: 30px;
+    color: #FF5252;
+  }
+  .navLinks {
+    font-size: 24px;
+    color: White;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1024px) and (max-width: 1636.99px) { 
+  .name{
+    font-size: 30px;
+    color: #FF5252;
+  }
+  .navLinks {
+    font-size: 24px;
+    color: White;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1637px) { 
+  .name{
+    font-size: 32px;
+    color: #FF5252;
+  }
+  .navLinks {
+    font-size: 22px;
+    color: White;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

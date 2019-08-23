@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Nav from './components/Nav';
+import MyNav from './components/MyNav';
 import Home from './views/Home';
 import Proyects from './views/Proyects';
 import About from './views/About';
@@ -12,13 +12,13 @@ import Contact from './views/Contact';
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <header >
-        <Nav />
-      </header>
-      <div className="App">
-      </div>
-      
+      <BrowserRouter>
+        <header >
+          <MyNav />
+        </header>
+        <div className="App">
+        </div>
+
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Home" component={Home} />
