@@ -8,7 +8,6 @@ import About from './views/About';
 import Skills from './views/Skills'
 import Contact from './views/Contact';
 
-
 function App() {
   return (
     <>
@@ -18,7 +17,6 @@ function App() {
         </header>
         <div className="App">
         </div>
-
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Home" component={Home} />

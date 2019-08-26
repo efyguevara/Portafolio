@@ -1,6 +1,8 @@
 import React from 'react';
-import { Container, Row, Card, CardGroup } from 'react-bootstrap';
+import { Container, Row, Card, CardDeck } from 'react-bootstrap';
 import socialN from '../img/socialNetwork.jpg.png';
+import burger from '../img/burgerqueen.png';
+import markdown from '../img/markdown.png';
 // import burgerQueen from '../img/burgerQueen.jpg.png';
 // import mpLinks from '../img/md-Links';
 
@@ -11,10 +13,45 @@ function Proyects() {
             <Container>
                 <Row>
                     <div>
-                        <h1>Proyets</h1>
+                        <h1 className="pageTitle">Proyets</h1>
                     </div>
+                    <CardDeck>
+  <Card>
+    <Card.Img variant="top" src={markdown} className="imgCards" />
+    <Card.Body>
+      <Card.Title>MD-LINKS</Card.Title>
+      <Card.Text>
+        https://github.com/efyguevara/SCL009-md-links
 
-                    <CardGroup>
+        https://www.npmjs.com/package/sg-md-links
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+  <Card>
+    <Card.Img variant="top" src={socialN} className="imgCards" />
+    <Card.Body>
+      <Card.Title>PET LOVERS</Card.Title>
+      <Card.Text>
+       https://github.com/efyguevara/SCL009-Social-Network
+      </Card.Text>
+    </Card.Body>
+  </Card>   
+
+  <Card>
+    <Card.Img variant="top" src={burger} className="imgCards" />
+    <Card.Body>
+      <Card.Title>BURGER QUEEN</Card.Title>
+      <Card.Text>
+        https://github.com/efyguevara/SCL009-Burger-Queen
+
+        https://betanyeli.github.io/SCL009-Burger-Queen/
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+</CardDeck>
+                    {/* <CardGroup>
                         <Card>
                             <Card.Img variant="top" src="holder.js/100px160" />
                             <Card.Body>
@@ -59,7 +96,7 @@ function Proyects() {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-                    </CardGroup>
+                    </CardGroup> */}
                 </Row>
             </Container>
 

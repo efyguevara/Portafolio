@@ -9,7 +9,12 @@
 .App {
   text-align: center;
 }
-
+:root {
+  --color-pink: #FF5252;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  /* var(--color-); */
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -17,20 +22,20 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--color-black);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--color-white);
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .colorOne {
-  color: #FF5252;
+  color: var(--color-pink);
 } 
 
 .bg-dark {
@@ -38,31 +43,62 @@
 }
 
 .navbar {
-  padding: 1rem 1rem
+  padding: .5rem .5rem;
+  margin-bottom: .5rem;
 }
 
 a:hover {
-  color: #FF5252;
+  color: var(--color-pink);
+}
+#templateHome{
+  background-image: url("./img/bg3.jpeg");
 }
 
 .imgbg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
   height: 100vh; 
   width: 100%;
 }
-#div2Home{
-  display: -webkit-flex;
-  -webkit-align-items: center;
-  display: flex;
+
+.imgCards {
+  width: 100%;
+  height: 300px;
+}
+
+.cardBody {
+  background-color:  rgba(255, 255, 255, 0.335)
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px 5px 5px;
+}
+
+#linkedIn {
+  border-radius: 8px
+}
+
+.centerContent {
+  text-align: center; 
+  display: grid;
   align-items: center;
+  vertical-align: baseline;
 }
+/* .leftContent {
+  text-align: left; 
+  display: grid;
+  align-items: left;
+  vertical-align: baseline;
+} */
 
-
-h1{
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-}
-h3 {
-  color: white;
+h1 h2 h3 h4 h5 {
+  color: var(--color-white);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -71,33 +107,29 @@ h3 {
   .name {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 35px;
-    color: #FF5252;
+    color:var(--color-pink);
     font-weight: 600;
     padding-left: 15px;
   }
   .navLinks {
-    
     font-size: 16px;
-    color: White;
+    color: var(--color-white);
     padding-left: 10px;
     padding-right: 10px;
   }
-  
-  #containerContact {
-    justify-content: center;
-    display: grid;
-  }
   .pageTitle {
+    color: var(--color-white);
     font-size: 30px;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
-  h3{
-    color: #FF5252;
+  h3 {
+    color: var(--color-white);
     font-size: 24px;
     padding-top: 15px;
   }
-  h5{
-    color: white;
+  h5 {
+    color: var(--color-white);
     font-size: 20px;
   }
 }
@@ -107,23 +139,30 @@ h3 {
   .name {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 45px;
-    color: #FF5252;
+    color:var(--color-pink);
     font-weight: 600;
     padding-left: 25px;
   }
   .navLinks {
     font-size: 18px;
-    color: White;
+    color: var(--color-white);
     padding-left: 10px;
     padding-right: 10px;
   }
   .pageTitle {
+    color: var(--color-white);
     font-size: 36px;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
-  h3{
+  h3 {
+    color: var(--color-white);
     font-size: 30px;
-    color: white;
+    padding-top: 15px;
+  }
+  h5 {
+    color: var(--color-white);
+    font-size: 26px;
   }
 }
 
@@ -132,23 +171,29 @@ h3 {
   .name {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 50px;
-    color: #FF5252;
+    color: var(--color-pink);
     font-weight: 600;
     padding-left: 30px;
   }
   .navLinks {
     font-size: 24px;
-    color: White;
+    color: var(--color-white);
     padding-left: 10px;
     padding-right: 10px;
   }
   .pageTitle {
+    color: var(--color-white);
     font-size: 34px;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
-  h3{
+  h3 {
     font-size: 30px;
-    color: white;
+    color: var(--color-white);
+  }
+  h5 {
+    color: var(--color-white);
+    font-size: 26px;
   }
 }
 
@@ -157,25 +202,30 @@ h3 {
   .name {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 50px;
-    color: #FF5252;
+    color:var(--color-pink);
     font-weight: 600;
     padding-left: 30px;
   }
   .navLinks {
     font-size: 24px;
-    color: White;
+    color: var(--color-white);
     padding-left: 30px;
     padding-right: 30px;
   }
   .pageTitle {
-    font-size: 70px;
-    font-weight: 800;
+    color: var(--color-white);
+    font-size: 55px;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
   h3{
-    font-size: 50px;
+    font-size: 45px;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: var(--color-white);
+  }
+  h5 {
+    color: var(--color-white);
+    font-size: 30px;
   }
 }
 
@@ -184,26 +234,32 @@ h3 {
   .name{
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 60px;
-    color: #FF5252;
+    color: var(--color-pink);
     font-weight: 600;
-    padding-left: 30px;
+    padding: 30px;
   }
   .navLinks {
     font-size: 22px;
-    color: White;
+    color: var(--color-white);
     padding-left: 35px;
     padding-right: 35px;
   }
   .pageTitle {
-    font-size: 70px;
-    font-weight: 800;
+    color: var(--color-white);
+    font-size: 55px;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
   h3{
-    font-size: 50px;
-    color: white;
+    font-size: 45px;
+    color: var(--color-white);
     font-family: 'Montserrat', sans-serif;
   }
+  h5 {
+    color: var(--color-white);
+    font-size: 30px;
+  }
+  
 }
 
 
