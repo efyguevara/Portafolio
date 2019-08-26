@@ -7,7 +7,7 @@ function Contact() {
             <Container id="containerContact">
                 <Row>
                     <div id="contactWidhtMe">
-                        <h2 className="pageTitle">Contacta conmigo</h2>
+                        <h1 className="pageTitle">CONTÁCTAME</h1>
                     </div>
                 </Row>
                 <Row>

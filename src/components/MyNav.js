@@ -7,8 +7,8 @@ function MyNav() {
   return (
     <>
 
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/home"><span className="colorOne name">STEFANY GUEVARA</span></Navbar.Brand>
+      <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
+        <Navbar.Brand href="/home"><span className="colorOne name">SG</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">

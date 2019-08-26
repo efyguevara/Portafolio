@@ -1,3 +1,11 @@
+/* @import url('https://fonts.googleapis.com/css?family=Candal|Candal:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese'); */
+@import url('https://fonts.googleapis.com/css?family=Anton|Bad+Script|Candal|Kalam:300,400,700|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Orbitron:400,500,700,900|Shadows+Into+Light|Shadows+Into+Light+Two&display=swap&subset=cyrillic,cyrillic-ext,devanagari,latin-ext,vietnamese');font-family: 'Shadows Into Light Two', cursive; */
+/* font-family: 'Anton', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Shadows Into Light', cursive; */
+/* font-family: 'Kalam', cursive; */
+/* font-family: 'Orbitron', sans-serif; */
+/* font-family: 'Bad Script', cursive;  */
 .App {
   text-align: center;
 }
@@ -21,31 +29,54 @@
   padding-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .colorOne {
   color: #FF5252;
 } 
 
 .bg-dark {
-  background: #424242;
-  
+  background: black;
+}
+
+.navbar {
+  padding: 1rem 1rem
+}
+
+a:hover {
+  color: #FF5252;
+}
+
+.imgbg {
+  height: 100vh; 
+  width: 100%;
+}
+#div2Home{
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+
+h1{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+h3 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 320px) { 
+@media (max-width: 375px) { 
   .name {
-    font-size: 24px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 35px;
     color: #FF5252;
+    font-weight: 600;
+    padding-left: 15px;
   }
   .navLinks {
+    
     font-size: 16px;
     color: White;
     padding-left: 10px;
@@ -53,24 +84,32 @@
   }
   
   #containerContact {
-  justify-content: center;
-  display: grid;
-  margin-top: 100px;
+    justify-content: center;
+    display: grid;
   }
   .pageTitle {
-    font-size: 24px;
-    
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
   }
   h3{
+    color: #FF5252;
+    font-size: 24px;
+    padding-top: 15px;
+  }
+  h5{
+    color: white;
     font-size: 20px;
   }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 321px) and (max-width: 767.99px) { 
+@media (min-width: 376px) and (max-width: 767.99px) { 
   .name {
-    font-size: 28px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 45px;
     color: #FF5252;
+    font-weight: 600;
+    padding-left: 25px;
   }
   .navLinks {
     font-size: 18px;
@@ -79,18 +118,23 @@
     padding-right: 10px;
   }
   .pageTitle {
-    font-size: 30px;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
   }
   h3{
-    font-size: 26px;
+    font-size: 30px;
+    color: white;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023.99px) { 
   .name {
-    font-size: 30px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 50px;
     color: #FF5252;
+    font-weight: 600;
+    padding-left: 30px;
   }
   .navLinks {
     font-size: 24px;
@@ -99,50 +143,66 @@
     padding-right: 10px;
   }
   .pageTitle {
-    font-size: 30px;
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
   }
   h3{
-    font-size: 26px;
+    font-size: 30px;
+    color: white;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 1024px) and (max-width: 1636.99px) { 
   .name {
-    font-size: 30px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 50px;
     color: #FF5252;
+    font-weight: 600;
+    padding-left: 30px;
   }
   .navLinks {
     font-size: 24px;
     color: White;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .pageTitle {
-    font-size: 30px;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
   }
   h3{
-    font-size: 26px;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1637px) { 
   .name{
-    font-size: 32px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 60px;
     color: #FF5252;
+    font-weight: 600;
+    padding-left: 30px;
   }
   .navLinks {
     font-size: 22px;
     color: White;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
   .pageTitle {
-    font-size: 32px;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
   }
   h3{
-    font-size: 28px;
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
   }
 }
 
