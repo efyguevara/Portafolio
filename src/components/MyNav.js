@@ -15,7 +15,7 @@ function MyNav() {
           </Nav>
           <Nav>
             <Nav.Link><Link to="/Home"><span className="navLinks">Home</span></Link></Nav.Link>
-            <Nav.Link><Link to="/Proyects"><span className="navLinks">Proyects</span></Link></Nav.Link>
+            <Nav.Link><Link to="/Projects"><span className="navLinks">Projects</span></Link></Nav.Link>
             <Nav.Link><Link to="/About"><span className="navLinks">About</span></Link></Nav.Link>
             <Nav.Link><Link to="/Skills"><span className="navLinks">Skills</span></Link></Nav.Link>
             <Nav.Link><Link to="/Contact"><span className="navLinks">Contact</span></Link></Nav.Link>

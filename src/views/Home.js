@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 
 function Home() {
     return (
@@ -7,7 +7,7 @@ function Home() {
             <Container-fluid >
                 <Row>
                     <div id="templateHome" className="imgbg centerContent">               
-                        <div id="div2Home" className="">
+                        <div id="div2Home">
                             <h1 className="pageTitle">
                                 Stefany Guevara
                             </h1>
