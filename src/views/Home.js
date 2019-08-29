@@ -7,13 +7,16 @@ function Home() {
             <Container-fluid >
                 <Row>
                     <div id="templateHome" className="imgbg centerContent">               
-                        <div id="div2Home">
-                            <h1 className="pageTitle">
+                        <div id="div2Home" className="typewriter">
+                            <h1 id="press" className="pageTitle">
                                 Stefany Guevara
                             </h1>
-                            <h3 className="">
+                            {/* </div> */}
+                            {/* <div id="div2Home" className="typewriter"> */}
+                            <h1 >
                                 Front End Developer...
-                            </h3> 
+                            </h1> 
+                            
                         </div>
                     </div>
                 </Row>
