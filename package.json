@@ -55,5 +55,7 @@
   "bugs": {
     "url": "https://github.com/efyguevara/Portafolio/issues"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2"
+  }
 }

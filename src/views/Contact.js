@@ -41,11 +41,11 @@ function Contact() {
                                 Redes sociales
                             </h3>
                             <div>
-                                <a target='_blank' href="https://linkedin.com/in/stefany-guevara"><img id="linkedIn" className="icon" src={linkedIn} /></a>
+                                <a rel="noopener noreferrer" target='_blank' href="https://linkedin.com/in/stefany-guevara"><img id="linkedIn" className="icon" src={linkedIn} alt="logo  LinkedIn" /></a>
 
-                                <a  target='_blank' href="https://github.com/efyguevara"><img id="github" className="icon" src={github} alt="Logo github" /></a>
+                                <a rel="noopener noreferrer" target='_blank' href="https://github.com/efyguevara"><img id="github" className="icon" src={github} alt="Logo Github" /></a>
 
-                                <a  target='_blank' href="https://github.com/efyguevara"><img id="gmail" className="icon" src={gmail} alt="Logo gmail" /></a>
+                                <a rel="noopener noreferrer" target='_blank' href="https://github.com/efyguevara"><img id="gmail" className="icon" src={gmail} alt="Logo Gmail" /></a>
                             </div>
                         </div>  
                     </Col>

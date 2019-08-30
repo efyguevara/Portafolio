@@ -7,6 +7,7 @@ import Projects from './views/Projects';
 import About from './views/About';
 import Skills from './views/Skills'
 import Contact from './views/Contact';
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 function App() {
   return (

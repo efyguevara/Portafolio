@@ -6,7 +6,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 function MyNav() {
   return (
     <>
-    {/* <Nav.Link as={Link} to="/Que-es-el-lupus" style={
+      {/* <Nav.Link as={Link} to="/Que-es-el-lupus" style={
                             this.props.state === 'lupus-definition' ? {borderBottom: '#7E2C81  3px solid'}:
                         {borderBottom:'none'}}
                         >¿Qué es el Lupus?</Nav.Link> */}

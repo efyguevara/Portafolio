@@ -1,5 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css?family=Candal|Candal:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese'); */
-@import url('https://fonts.googleapis.com/css?family=Anton|Bad+Script|Candal|Kalam:300,400,700|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Orbitron:400,500,700,900|Shadows+Into+Light|Shadows+Into+Light+Two&display=swap&subset=cyrillic,cyrillic-ext,devanagari,latin-ext,vietnamese');font-family: 'Shadows Into Light Two', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Anton|Bad+Script|Candal|Kalam:300,400,700|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Orbitron:400,500,700,900|Shadows+Into+Light|Shadows+Into+Light+Two&display=swap&subset=cyrillic,cyrillic-ext,devanagari,latin-ext,vietnamese');
+font-family: 'Shadows Into Light Two',
+cursive;
+*/
 /* font-family: 'Anton', sans-serif; */
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Shadows Into Light', cursive; */
@@ -41,6 +44,7 @@ h1 span {
 .App {
   text-align: center;
 }
+
 /* GLOBAL STYLES */
 /* body {
   background: #333;
@@ -50,30 +54,47 @@ h1 span {
 } */
 
 /* DEMO-SPECIFIC STYLES */
-.typewriter h1{
+.typewriter h1 {
   color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #FF5252; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(15, end),
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #FF5252;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 35%
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #FF5252 }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #FF5252
+  }
 }
+
 :root {
   --color-pink: #FF5252;
   --color-white: #ffffff;
@@ -84,7 +105,7 @@ h1 span {
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-  pointer-events: none;   
+  pointer-events: none;
 }
 
 .App-header {
@@ -102,7 +123,7 @@ h1 span {
 
 .colorOne {
   color: var(--color-pink);
-} 
+}
 
 .bg-dark {
   background: black;
@@ -111,9 +132,9 @@ h1 span {
 .navbar {
   padding: .5rem .5rem;
   margin-bottom: .5rem;
-  /* position: fixed; */
-  z-index: 9999;
-  /* background-color: var(--color-black); */
+  /* position: absolute; */
+  z-index: 99999;
+  background-color: var(--color-black);
 }
 
 a:hover {
@@ -121,22 +142,61 @@ a:hover {
 }
 
 
-#templateHome{
+#templateHome {
   background-image: url("./img/bg3.jpeg");
 }
-#imgMd{
-  background-image: url("./img/markdown.png");
+
+/* Cards */
+
+
+.imgMd {
+  /* background-image: url("./img/markdown.png"); */
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  background-attachment: initial;
+  background-size: contain;
   position: static;
-  height: 200px; 
-  width: 100px;
-} 
-.cardBody{
-  /* height: 300px;
-  width: 100px; */
-  background-color: rgba(255, 255, 255, 0.739);
+  height: 100%;
+  width: 100%;
+}
+
+.imgSN {
+  /* background-image: url("./img/socialNetwork.jpg.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: static;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.imgBQ {
+  /* background-image: url("./img/burgerqueen.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: static;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.imgMd:hover {
+  opacity: .8;
+}
+
+.imgSN:hover {
+  opacity: .8;
+}
+
+.imgBQ:hover {
+  opacity: .8;
+}
+
+.card-body {
+  background-color: transparent;
+}
+
+/* Fin Cards */
+
+.containerProjects {
+  justify-content: center;
+  display: flex;
 }
 
 .imgbg {
@@ -146,14 +206,9 @@ a:hover {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  height: 100vh; 
+  height: 100vh;
   width: 100%;
 }
-
-/* .imgCards {
-  width: 100%;
-  height: 250px;
-} */
 
 .icon {
   width: 40px;
@@ -166,11 +221,12 @@ a:hover {
 }
 
 .centerContent {
-  text-align: center; 
+  text-align: center;
   display: grid;
   align-items: center;
   vertical-align: baseline;
 }
+
 /* .leftContent {
   text-align: left; 
   display: grid;
@@ -184,31 +240,35 @@ h1 h2 h3 h4 h5 {
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 375px) { 
+@media (max-width: 375px) {
   .name {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 35px;
-    color:var(--color-pink);
+    color: var(--color-pink);
     font-weight: 600;
     padding-left: 15px;
   }
+
   .navLinks {
     font-size: 16px;
     color: var(--color-white);
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .pageTitle {
     color: var(--color-white);
     font-size: 30px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
+
   h3 {
     color: var(--color-white);
     font-size: 24px;
     padding-top: 15px;
   }
+
   h5 {
     color: var(--color-white);
     font-size: 20px;
@@ -216,31 +276,35 @@ h1 h2 h3 h4 h5 {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 376px) and (max-width: 767.99px) { 
+@media (min-width: 376px) and (max-width: 767.99px) {
   .name {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 45px;
-    color:var(--color-pink);
+    color: var(--color-pink);
     font-weight: 600;
     padding-left: 25px;
   }
+
   .navLinks {
     font-size: 18px;
     color: var(--color-white);
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .pageTitle {
     color: var(--color-white);
     font-size: 36px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
+
   h3 {
     color: var(--color-white);
     font-size: 30px;
     padding-top: 15px;
   }
+
   h5 {
     color: var(--color-white);
     font-size: 26px;
@@ -248,7 +312,7 @@ h1 h2 h3 h4 h5 {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1023.99px) { 
+@media (min-width: 768px) and (max-width: 1023.99px) {
   .name {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 50px;
@@ -256,22 +320,26 @@ h1 h2 h3 h4 h5 {
     font-weight: 600;
     padding-left: 30px;
   }
+
   .navLinks {
     font-size: 24px;
     color: var(--color-white);
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .pageTitle {
     color: var(--color-white);
     font-size: 34px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
+
   h3 {
     font-size: 30px;
     color: var(--color-white);
   }
+
   h5 {
     color: var(--color-white);
     font-size: 26px;
@@ -279,31 +347,35 @@ h1 h2 h3 h4 h5 {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 1024px) and (max-width: 1636.99px) { 
+@media (min-width: 1024px) and (max-width: 1636.99px) {
   .name {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 50px;
-    color:var(--color-pink);
+    color: var(--color-pink);
     font-weight: 600;
     padding-left: 30px;
   }
+
   .navLinks {
     font-size: 24px;
     color: var(--color-white);
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .pageTitle {
     color: var(--color-white);
     font-size: 55px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
-  h3{
+
+  h3 {
     font-size: 45px;
     font-family: 'Montserrat', sans-serif;
     color: var(--color-white);
   }
+
   h5 {
     color: var(--color-white);
     font-size: 30px;
@@ -311,36 +383,38 @@ h1 h2 h3 h4 h5 {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1637px) { 
-  .name{
+@media (min-width: 1637px) {
+  .name {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 60px;
     color: var(--color-pink);
     font-weight: 600;
     padding: 30px;
   }
+
   .navLinks {
     font-size: 22px;
     color: var(--color-white);
     padding-left: 35px;
     padding-right: 35px;
   }
+
   .pageTitle {
     color: var(--color-white);
     font-size: 55px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
   }
-  h3{
+
+  h3 {
     font-size: 45px;
     color: var(--color-white);
     font-family: 'Montserrat', sans-serif;
   }
+
   h5 {
     color: var(--color-white);
     font-size: 30px;
   }
-  
+
 }
-
-
