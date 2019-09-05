@@ -6,11 +6,6 @@ import { Navbar, Nav } from 'react-bootstrap';
 function MyNav() {
   return (
     <>
-      {/* <Nav.Link as={Link} to="/Que-es-el-lupus" style={
-                            this.props.state === 'lupus-definition' ? {borderBottom: '#7E2C81  3px solid'}:
-                        {borderBottom:'none'}}
-                        >¿Qué es el Lupus?</Nav.Link> */}
-
       <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
         <Navbar.Brand href="/home"><span className="colorOne name">SG</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,12 +16,11 @@ function MyNav() {
             <Nav.Link as={Link} to="/Home"><span className="navLinks">Home</span></Nav.Link>
             <Nav.Link as={Link} to="/Projects"><span className="navLinks">Projects</span></Nav.Link>
             <Nav.Link as={Link} to="/About"><span className="navLinks">About</span></Nav.Link>
-            <Nav.Link as={Link} to="/Skills"><span className="navLinks">Skills</span></Nav.Link>
+            {/* <Nav.Link as={Link} to="/Skills"><span className="navLinks">Skills</span></Nav.Link> */}
             <Nav.Link as={Link} to="/Contact"><span className="navLinks">Contact</span></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-
     </>
   );
 }

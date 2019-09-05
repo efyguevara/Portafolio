@@ -1,25 +1,27 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 function Home() {
     return (
         <>
-            <Container-fluid >
+            <Container-fluid>
                 <Row>
-                    <div id="templateHome" className="imgbg centerContent">               
-                        <div id="div2Home" className="">
-                            <h1 id="press" className="pageTitle">
-                                Stefany Guevara
-                            </h1>
-                            <span className="typewriter pageTitle">
-                                <h1>
-                                    Front End Developer...
-                                </h1> 
-                            </span>
-                            
-                            
+                    <Col>
+                        <div id="templateHome" className="imgbg centerContent margintop">
+                            <div id="div2Home" className="">
+                                <h1 className="pageTitle">
+                                    Stefany Guevara
+                                </h1>
+                                <span className="typewriter">
+                                    <h1 id="" className="pageTitle textAnimation">
+                                        Front End Developer...
+                                    </h1>
+                                </span>
+
+
+                            </div>
                         </div>
-                    </div>
+                    </Col>
                 </Row>
             </Container-fluid>
         </>

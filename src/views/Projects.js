@@ -14,7 +14,7 @@ function Projects() {
       <Container id="containerProjects">
         <Row>
           <div>
-            <h1 className="pageTitle">Projects</h1>
+            <h1 className="pageTitle margintop">PROJECTS</h1>
           </div>
         </Row>
 
@@ -22,9 +22,9 @@ function Projects() {
 
           <CardDeck>
             <Card className="card">
-              <Card.Title>MD-LINKS</Card.Title>
               <Card.Img variant="top" src={Markdown} className="imgMd" />
               <Card.Body className="bgcard">
+                <Card.Title>MD-LINKS</Card.Title>
                 <Card.Text>
                   Libreria Npm.
               </Card.Text>
@@ -42,10 +42,11 @@ function Projects() {
             </Card>
 
             <Card className="">
-              <Card.Title>PET LOVERS</Card.Title>
+
               <Card.Img variant="top" src={socialN} className="imgSN" />
 
               <Card.Body className="bgcard">
+                <Card.Title>PET LOVERS</Card.Title>
                 <Card.Text>
                   Red social para amantes de  las mascotas
                 </Card.Text>
@@ -64,9 +65,10 @@ function Projects() {
             </Card>
 
             <Card className="">
-              <Card.Title>BURGER QUEEN</Card.Title>
+
               <Card.Img variant="top" src={burger} className="imgBQ" />
               <Card.Body className="bgcard">
+                <Card.Title>BURGER QUEEN</Card.Title>
                 <Card.Text>
                   Haz tus pedidos de comida rapida en Burger Queen.
                 </Card.Text>

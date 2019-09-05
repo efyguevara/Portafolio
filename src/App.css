@@ -14,13 +14,9 @@ cursive;
   text-align: center;
 }
 
-/* GLOBAL STYLES */
-/* body {
-  background: #333;
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
-} */
+.margintop {
+  margin-top: 3em;
+}
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
@@ -36,8 +32,8 @@ cursive;
   letter-spacing: .15em;
   /* Adjust as needed */
   animation:
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    typing 3s steps(30, end),
+    blink-caret .7s step-end;
 }
 
 /* The typing effect */
@@ -47,13 +43,12 @@ cursive;
   }
 
   to {
-    width: 35%
+    width: 50%
   }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-
   from,
   to {
     border-color: transparent
@@ -71,11 +66,6 @@ cursive;
   /* var(--color-); */
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
 .App-header {
   background-color: var(--color-black);
@@ -101,7 +91,7 @@ cursive;
 .navbar {
   padding: .5rem .5rem;
   margin-bottom: .5rem;
-  position: static;
+  position: fixed;
   z-index: 99999;
   width: 100%;
   /* background-color: var(--color-black); */
@@ -111,14 +101,12 @@ a:hover {
   color: var(--color-pink);
 }
 
-
 #templateHome {
   background-image: url("./img/bg3.jpeg");
+  width: 100%;
 }
 
 /* Cards */
-
-
 .imgMd .imgSN .imgBQ{
   /* background-image: url("./img/markdown.png"); */
   background-repeat: no-repeat;
@@ -130,21 +118,14 @@ a:hover {
 
   /* .imgSN {
     background-image: url("./img/socialNetwork.jpg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: static;
-    max-height: 100%;
-    max-width: 100%;
-  }
-
-  .imgBQ {
-    background-image: url("./img/burgerqueen.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: static;
-    max-height: 100%;
-    max-width: 100%;
   } */
+  
+.imgBQ {
+  /* background-image: url("./img/burgerqueen.png"); */
+  width: 220px;
+  height: 230px;
+  align-self: center;
+}
 
 .imgMd:hover {
   opacity: .8;
@@ -159,8 +140,10 @@ a:hover {
 }
 
 .card-body {
+  padding: 0em 1em 0em 1em;
   background-color: transparent;
 }
+
 /* Fin Cards */
 
 
@@ -172,7 +155,7 @@ a:hover {
 .imgbg {
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: static;
   position: relative;
   margin: 0 auto;
   padding: 0;
@@ -183,7 +166,13 @@ a:hover {
 .icon {
   width: 40px;
   height: 40px;
-  margin: 5px 5px 5px 5px;
+  margin: 2em 2em 2em 2em;
+}
+
+.icon:hover {
+  width: 45px;
+  height: 45px;
+  opacity: 2;
 }
 
 #linkedIn {
@@ -206,9 +195,8 @@ h1 h2 h3 h4 h5 {
 .pAbout {
   color: white;
   font-size: 30px;
-  width: 80%;
-  margin: 15px 15px 15px 15px;  
- }
+  margin: 15px 15px 15px 0px;  
+}
 
 .leftContent {
   text-align: right; 
@@ -216,39 +204,49 @@ h1 h2 h3 h4 h5 {
   align-items: left;
   vertical-align: baseline;
 }
-
 /* Fin about me */
 
-/* Extra small devices (portrait phones, less than 576px) */
+
+/* MEDIA QUERIES */
 @media (max-width: 375px) {
   .name {
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 35px;
     color: var(--color-pink);
     font-weight: 600;
-    padding-left: 15px;
+    /* padding-left: 15px; */
   }
-
+  .navbar {
+    background-color: #000000;
+  }
   .navLinks {
     font-size: 16px;
     color: var(--color-white);
     padding-left: 10px;
     padding-right: 10px;
   }
-
   .pageTitle {
+    display: grid;
     color: var(--color-white);
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 100;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
   }
-
+  .textAnimation {
+    font-size: 18px;
+  }
+  .pAbout {
+    color: white;
+    font-size: 15px;
+    margin: 15px 15px 15px 0px;  
+    text-align: center;
+  }
   h3 {
     color: var(--color-white);
     font-size: 24px;
     padding-top: 15px;
   }
-
   h5 {
     color: var(--color-white);
     font-size: 20px;
@@ -264,27 +262,26 @@ h1 h2 h3 h4 h5 {
     font-weight: 600;
     padding-left: 25px;
   }
-
   .navLinks {
     font-size: 18px;
     color: var(--color-white);
     padding-left: 10px;
     padding-right: 10px;
   }
-
   .pageTitle {
     color: var(--color-white);
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 100;
     font-family: 'Montserrat', sans-serif;
   }
-
+  .textHome {
+    font-size: 10px;
+  }
   h3 {
     color: var(--color-white);
     font-size: 30px;
     padding-top: 15px;
   }
-
   h5 {
     color: var(--color-white);
     font-size: 26px;
@@ -300,26 +297,23 @@ h1 h2 h3 h4 h5 {
     font-weight: 600;
     padding-left: 30px;
   }
-
   .navLinks {
     font-size: 24px;
     color: var(--color-white);
     padding-left: 10px;
     padding-right: 10px;
   }
-
   .pageTitle {
+    display: grid;
     color: var(--color-white);
     font-size: 34px;
-    font-weight: 600;
+    font-weight: 100;
     font-family: 'Montserrat', sans-serif;
   }
-
   h3 {
     font-size: 30px;
     color: var(--color-white);
   }
-
   h5 {
     color: var(--color-white);
     font-size: 26px;
@@ -339,8 +333,8 @@ h1 h2 h3 h4 h5 {
   .navLinks {
     font-size: 24px;
     color: var(--color-white);
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 
     cursor: pointer;
   }
@@ -348,7 +342,7 @@ h1 h2 h3 h4 h5 {
   .pageTitle {
     color: var(--color-white);
     font-size: 55px;
-    font-weight: 600;
+    font-weight: 100;
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -377,14 +371,14 @@ h1 h2 h3 h4 h5 {
   .navLinks {
     font-size: 22px;
     color: var(--color-white);
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 4em;
+    padding-right: 4em;
   }
 
   .pageTitle {
     color: var(--color-white);
     font-size: 55px;
-    font-weight: 600;
+    font-weight: 100;
     font-family: 'Montserrat', sans-serif;
   }
 
