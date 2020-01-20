@@ -26,7 +26,7 @@ function Projects() {
               <Card.Body className="bgcard">
                 <Card.Title>MD-LINKS</Card.Title>
                 <Card.Text>
-                  Libreria Npm.
+                  Librería npm, analizador de url's, lector de archivos markdown.
               </Card.Text>
               </Card.Body>
               <Card.Footer>
@@ -43,22 +43,22 @@ function Projects() {
 
             <Card className="">
 
-              <Card.Img variant="top" src={socialN} className="imgSN" />
+              <Card.Img variant="top" src="https://camo.githubusercontent.com/1f86185267681b0511bba9f0369bb2e1e7eda761/68747470733a2f2f692e696d6775722e636f6d2f46554c6f784f6a2e706e67" className="imgSN" />
 
               <Card.Body className="bgcard">
-                <Card.Title>PET LOVERS</Card.Title>
+                <Card.Title>POPCORN FAMILY</Card.Title>
                 <Card.Text>
-                  Red social para amantes de  las mascotas
+                  PopCorn Family, aplicación familiar donde se puede visualizar la  reseña de películas según ranking, año de lanzamiento o género.
                 </Card.Text>
 
 
 
               </Card.Body>
               <Card.Footer>
-                <Card.Link rel="noopener noreferrer" target='_blank' href="https://github.com/efyguevara/SCL009-Social-Network"><img className="icon" src={github} alt="Logo github" />
+                <Card.Link rel="noopener noreferrer" target='_blank' href="https://github.com/efyguevara/SCL009-hackathon-peliculas"><img className="icon" src={github} alt="Logo github" />
                 </Card.Link>
 
-                <Card.Link rel="noopener noreferrer" target='_blank' href="https://github.com/efyguevara/SCL009-Social-Network"><img className="icon" src={internet} alt="icono de codigo" />
+                <Card.Link rel="noopener noreferrer" target='_blank' href="https://efyguevara.github.io/SCL009-hackathon-peliculas/src/index.html"><img className="icon" src={internet} alt="icono de codigo" />
                 </Card.Link>
 
               </Card.Footer>
@@ -66,19 +66,19 @@ function Projects() {
 
             <Card className="">
 
-              <Card.Img variant="top" src={burger} className="imgBQ" />
+              <Card.Img variant="top" src="https://github.com/efyguevara/SCL009-data-lovers/raw/master/src/img/pokemon_ash.png" className="imgSN" />
               <Card.Body className="bgcard">
-                <Card.Title>BURGER QUEEN</Card.Title>
+                <Card.Title>POKEMON GO!</Card.Title>
                 <Card.Text>
-                  Haz tus pedidos de comida rapida en Burger Queen.
+                  Aplicación web para personas que se están iniciando en Pokemon Go. Te permite visualizar la información de cada pokemon.
                 </Card.Text>
               </Card.Body>
 
               <Card.Footer>
 
-                <Card.Link rel="noopener noreferrer" target='_blank' href="https://github.com/efyguevara/SCL009-Burger-Queen">
+                <Card.Link rel="noopener noreferrer" target='_blank' href="https://github.com/efyguevara/SCL009-data-lovers">
                   <img className="icon" src={github} alt="Logo github" />
-                  <Card.Link rel="noopener noreferrer" target='_blank' href="https://github.com/efyguevara/SCL009-Burger-Queen">
+                  <Card.Link rel="noopener noreferrer" target='_blank' href="https://efyguevara.github.io/SCL009-data-lovers/src/">
                     <img className="icon" src={internet} alt="icono de codigo" />
                   </Card.Link>
 
